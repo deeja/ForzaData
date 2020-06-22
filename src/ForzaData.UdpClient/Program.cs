@@ -47,7 +47,7 @@ namespace ForzaData.UdpClient
 
             var receiverTask = Task.Run(async () =>
             {
-                Console.WriteLine("Packet Forwarding UP!");
+                Console.Clear();
                 var client = new System.Net.Sockets.UdpClient(FORZA_DATA_OUT_PORT);
                 Console.WriteLine("Listening... ");
                 while (true)
